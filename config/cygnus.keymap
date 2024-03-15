@@ -105,7 +105,7 @@
             bindings = <
 &kp N2    &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0         &kp MINUS
 &kp LEFT  &kp DOWN      &kp RIGHT     &kp UP_ARROW  &kp PG_DN     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMICOLON  &kp SQT
-&kp HOME  &kp DEL       &kp END       &kp PG_DN     &kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp SLASH
+&kp HOME  &kp DEL       &kp END       &kp PG_DN     &kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp FSLH
                         &none         &none         &none         &kp N0        &kp PERIOD    &kp EQUAL
             >;
         };
