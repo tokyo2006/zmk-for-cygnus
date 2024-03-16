@@ -3,11 +3,11 @@
  *
  * SPDX-License-Identifier: MIT
  */
+
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 
 &mt {
     tapping-term-ms = <160>;
@@ -56,16 +56,19 @@
             bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
+
+        lshift {
+            bindings = <&kp LSHIFT>;
+            key-positions = <13 12>;
+        };
+
+        rshift {
+            bindings = <&kp RSHIFT>;
+            key-positions = <16 17>;
+        };
     };
 
     behaviors {
-        tab_esc_ctrl: tab_esc_ctrl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAB_ESC_CTRL";
-            #binding-cells = <0>;
-            bindings = <&mt LCTRL ESC>, <&kp TAB>;
-        };
-
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP";
@@ -87,6 +90,35 @@
             global-quick-tap;
             quick-tap-ms = <200>;
         };
+
+        tap_hold_1: th1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "th1";
+            bindings = <&m1>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <160>;
+        };
+    };
+
+    macros {
+        bootloader: bootloader {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bootloader>;
+            label = "BOOTLOADER";
+        };
+
+        m1: m2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LC(S)>,
+                <&macro_wait_time 100>,
+                <&kp A &kp N5 &kp ENTER>;
+
+            label = "M2";
+        };
     };
 
     keymap {
@@ -94,10 +126,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W           &kp E           &kp R        &kp T             &kp Y              &kp U            &kp I            &kp O        &kp P
-&mt LCTRL A  &mt LEFT_WIN S  &mt LEFT_ALT D  &lt 5 F      &mt LEFT_SHIFT G  &mt RIGHT_SHIFT H  &mt RIGHT_ALT J  &mt RIGHT_WIN K  &mt RCTRL L  &lt 1 ENTER
-&kp Z        &kp X           &kp C           &kp V        &kp B             &kp N              &kp M            &kp COMMA        &kp PERIOD   &kp QUESTION
-                             &kp LEFT_WIN    &lt 2 ENTER  &lt 1 SPACE       &lt 3 BACKSPACE    &lt 4 SPACE      &kp UP_ARROW
+&kp Q        &kp W           &kp E                &kp R        &kp T             &kp Y              &kp U            &kp I                &kp O        &kp P
+&mt LCTRL A  &mt LEFT_WIN S  &mt LEFT_ALT D       &lt 5 F      &mt LEFT_SHIFT G  &mt RIGHT_SHIFT H  &mt RIGHT_ALT J  &mt RIGHT_WIN K      &mt RCTRL L  &lt 1 ENTER
+&kp Z        &kp X           &kp C                &kp V        &kp B             &kp N              &kp M            &kp COMMA            &kp PERIOD   &kp QUESTION
+                             &tap_hold_1 0 LC(D)  &lt 2 ENTER  &lt 1 SPACE       &lt 3 BACKSPACE    &lt 4 SPACE      &tap_hold_1 0 LC(D)
             >;
         };
 
@@ -147,4 +179,3 @@
         };
     };
 };
-
