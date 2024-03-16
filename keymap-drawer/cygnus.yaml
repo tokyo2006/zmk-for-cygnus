@@ -30,12 +30,12 @@ layers:
   - {t: ',', s: <}
   - .
   - '?'
-  - LEFT WIN
+  - {t: LC(D), h: '&m1'}
   - {t: '$$mdi:keyboard-return$$', h: raise}
   - {t: '$$mdi:keyboard-space$$', h: lower}
   - {t: '$$mdi:backspace$$', h: adjust}
   - {t: '$$mdi:keyboard-space$$', h: '4'}
-  - $$mdi:arrow-up-bold$$
+  - {t: LC(D), h: '&m1'}
   lower:
   - {t: '2', s: '@'}
   - '3'
@@ -234,3 +234,7 @@ combos:
   k: $$mdi:keyboard-esc$$
 - p: [10, 11]
   k: $$mdi:keyboard-tab$$
+- p: [13, 12]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [16, 17]
+  k: $$mdi:apple-keyboard-shift$$
