@@ -13,13 +13,13 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: LEFT WIN}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '5'}
+  - {t: F, h: funtion}
   - {t: G, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: RIGHT WIN}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-return$$', h: lower}
+  - {t: '$$mdi:keyboard-return$$', h: num+fun}
   - Z
   - X
   - C
@@ -29,14 +29,14 @@ layers:
   - M
   - {t: ',', s: <}
   - .
-  - '?'
+  - {t: /, s: '?'}
   - {t: LC(D), h: '&m1'}
-  - {t: '$$mdi:keyboard-return$$', h: raise}
-  - {t: '$$mdi:keyboard-space$$', h: lower}
-  - {t: '$$mdi:backspace$$', h: adjust}
-  - {t: '$$mdi:keyboard-space$$', h: '4'}
+  - {t: '$$mdi:keyboard-return$$', h: shift}
+  - {t: '$$mdi:keyboard-space$$', h: num+fun}
+  - {t: '$$mdi:backspace$$', h: shift}
+  - {t: '$$mdi:keyboard-space$$', h: bluetooth}
   - {t: LC(D), h: '&m1'}
-  lower:
+  num+fun:
   - {t: '2', s: '@'}
   - '3'
   - '4'
@@ -65,15 +65,15 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: \, s: '|'}
-  - {t: /, s: '?'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '=', s: +}
+  - {t: \, s: '|', type: held}
   - {t: '0', s: )}
   - .
-  - {t: '=', s: +}
-  raise:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  shift:
   - '@'
   - '#'
   - $
@@ -105,20 +105,22 @@ layers:
   - '|'
   - '?'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: <, type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - )
+  - {t: +, type: held}
+  - '|'
+  - {t: ), type: held}
   - '>'
-  - +
-  adjust:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  mouse+media:
   - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LC(LA(D))
-  - LC(LA(DOWN))
-  - LC(LA(UP))
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -126,28 +128,26 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:volume-off$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PLAY PAUSE
   - PREVIOUS
+  - PLAY PAUSE
+  - $$mdi:skip-next$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PREVIOUS
+  - $$mdi:play-pause$$
   - $$mdi:skip-next$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - bluetooth
+  - bluetooth
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  '4':
+  bluetooth:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -180,14 +180,14 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  '5':
+  funtion:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LC(UP ARROW)
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LC(D)
   - F5
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F7
@@ -197,7 +197,7 @@ layers:
   - F11
   - LC(A)
   - LC(DOWN)
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&m1'
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F4
@@ -226,10 +226,6 @@ combos:
   k: '['
 - p: [6, 7]
   k: ']'
-- p: [12, 13]
-  k: '{'
-- p: [16, 17]
-  k: '}'
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
 - p: [10, 11]
