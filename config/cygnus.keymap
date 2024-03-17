@@ -35,18 +35,6 @@
             timeout-ms = <50>;
         };
 
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <12 13>;
-            timeout-ms = <50>;
-        };
-
-        right_brace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <16 17>;
-            timeout-ms = <50>;
-        };
-
         esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
@@ -124,43 +112,43 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             bindings = <
 &kp Q        &kp W           &kp E                &kp R        &kp T             &kp Y              &kp U            &kp I                &kp O        &kp P
 &mt LCTRL A  &mt LEFT_WIN S  &mt LEFT_ALT D       &lt 5 F      &mt LEFT_SHIFT G  &mt RIGHT_SHIFT H  &mt RIGHT_ALT J  &mt RIGHT_WIN K      &mt RCTRL L  &lt 1 ENTER
-&kp Z        &kp X           &kp C                &kp V        &kp B             &kp N              &kp M            &kp COMMA            &kp PERIOD   &kp QUESTION
-                             &tap_hold_1 0 LC(D)  &lt 2 ENTER  &lt 1 SPACE       &lt 3 BACKSPACE    &lt 4 SPACE      &tap_hold_1 0 LC(D)
+&kp Z        &kp X           &kp C                &kp V        &kp B             &kp N              &kp M            &kp COMMA            &kp PERIOD   &kp SLASH
+                             &tap_hold_1 0 LC(D)  &lt 2 ENTER  &lt 1 SPACE       &lt 2 BACKSPACE    &lt 4 SPACE      &tap_hold_1 0 LC(D)
             >;
         };
 
-        lower_layer {
+        num+fun {
             bindings = <
-&kp N2    &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0         &kp MINUS
-&kp LEFT  &kp DOWN      &kp RIGHT     &kp UP_ARROW  &kp PG_DN     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMICOLON  &kp SQT
-&kp HOME  &kp DEL       &kp END       &kp PG_DN     &kp GRAVE     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp FSLH
-                        &none         &none         &none         &kp N0        &kp PERIOD    &kp EQUAL
+&kp N2    &kp NUMBER_3  &kp NUMBER_4  &kp N5        &kp NUMBER_6   &kp N7        &kp N8        &kp N9        &kp N0            &kp MINUS
+&kp LEFT  &kp DOWN      &kp RIGHT     &kp UP_ARROW  &kp PG_DN      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SEMICOLON     &kp SQT
+&kp HOME  &kp DEL       &kp END       &kp PG_DN     &kp GRAVE      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                        &none         &kp EQUAL     &kp BACKSLASH  &kp N0        &kp PERIOD    &none
             >;
         };
 
-        raise_layer {
+        shift {
             bindings = <
 &kp AT_SIGN   &kp HASH        &kp DOLLAR     &kp PERCENT       &kp CARET      &kp AMPERSAND          &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
 &kp LS(LEFT)  &kp LS(DOWN)    &kp LS(RIGHT)  &kp LS(UP_ARROW)  &kp LS(PG_DN)  &kp DOLLAR             &kp PERCENT       &kp CARET             &kp COLON              &kp DOUBLE_QUOTES
 &kp LS(HOME)  &kp LS(DELETE)  &kp LS(END)    &kp LS(PG_DN)     &kp TILDE      &kp EXCLAMATION        &kp AT_SIGN       &kp POUND             &kp PIPE               &kp QUESTION
-                              &none          &kp LESS_THAN     &none          &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp PLUS
+                              &none          &kp PLUS          &kp PIPE       &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &none
             >;
         };
 
-        adjust_layer {
+        mouse+media {
             bindings = <
-&mkp LCLK  &mkp MCLK  &mkp RCLK  &none  &none  &kp LC(LA(D))     &kp LC(LA(DOWN))   &kp LC(LA(UP))   &none  &none
-&none      &none      &none      &none  &none  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none  &none
-&none      &none      &none      &none  &none  &kp C_PLAY_PAUSE  &kp C_PREVIOUS     &kp C_NEXT       &none  &none
-                      &none      &none  &none  &none             &none              &none
+&mkp LCLK       &none             &mkp RCLK   &none  &none  &none           &none     &mkp LCLK   &none  &mkp RCLK
+&none           &none             &none       &none  &none  &none           &none     &none       &none  &none
+&kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &none  &none  &kp C_PREVIOUS  &kp C_PP  &kp C_NEXT  &none  &none
+                                  &none       &none  &mo 4  &mo 4           &none     &none
             >;
         };
 
-        layer_4 {
+        bluetooth {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &left_bl  &none  &none  &none  &kp C_SLEEP
 &bt BT_CLR    &none         &none         &none         &none         &none     &none  &none  &none  &none
@@ -169,12 +157,12 @@
             >;
         };
 
-        layer_5 {
+        funtion {
             bindings = <
-&none      &kp LC(UP_ARROW)  &none  &kp F5  &none  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&kp LC(A)  &kp LC(DOWN)      &none  &none   &none  &kp F4  &kp F5  &kp F6  &none    &kp F12
-&kp LC(Z)  &none             &none  &none   &none  &kp F1  &kp F2  &kp F3  &none    &none
-                             &none  &none   &none  &none   &none   &none
+&none      &kp LC(UP_ARROW)  &kp LC(D)  &kp F5  &none  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&kp LC(A)  &kp LC(DOWN)      &m1        &none   &none  &kp F4  &kp F5  &kp F6  &none    &kp F12
+&kp LC(Z)  &none             &none      &none   &none  &kp F1  &kp F2  &kp F3  &none    &none
+                             &none      &none   &none  &none   &none   &none
             >;
         };
     };
