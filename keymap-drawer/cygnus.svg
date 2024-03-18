@@ -1372,9 +1372,9 @@ path.combo {
 <tspan x="0" dy="-0.5em" style="font-size: 83%">LC(UP</tspan><tspan x="0" dy="1.0em" style="font-size: 83%">ARROW)</tspan>
 </text>
 </g>
-<g transform="translate(200, 40)" class="key keypos-2">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">LC(D)</text>
+<g transform="translate(200, 40)" class="key none keypos-2">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(280, 49)" class="key keypos-3">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
