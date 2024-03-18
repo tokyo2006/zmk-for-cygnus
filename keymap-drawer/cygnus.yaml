@@ -20,7 +20,7 @@ layers:
   - {t: K, h: RIGHT WIN}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', h: num+fun}
-  - Z
+  - {t: Z, h: working-macro}
   - X
   - C
   - V
@@ -29,7 +29,7 @@ layers:
   - M
   - {t: ',', s: <}
   - .
-  - {t: /, s: '?'}
+  - {t: /, h: working-macro, s: '?'}
   - {t: LC(D), h: '&m1'}
   - {t: '$$mdi:keyboard-return$$', h: shift}
   - {t: '$$mdi:keyboard-space$$', h: num+fun}
@@ -220,6 +220,43 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  working-macro:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&m5'
+  - '&m6'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&m5'
+  - '&m6'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&m2'
+  - '&m3'
+  - '&m4'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&m2'
+  - '&m3'
+  - '&m4'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - LC(D)
+  - '&m1'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LC(D)
+  - '&m1'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [3, 2]
