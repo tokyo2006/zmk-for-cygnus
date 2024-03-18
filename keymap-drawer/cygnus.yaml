@@ -114,8 +114,8 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:pan-up$$
+  - $$mdi:pan-left$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
@@ -124,8 +124,8 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:pan-down$$
+  - $$mdi:pan-right$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}

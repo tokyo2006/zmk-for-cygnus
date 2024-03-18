@@ -69,6 +69,18 @@
 <svg id="mdi:mouse-right-click-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-mouse-right-click-outline" viewBox="0 0 24 24"><path d="M13 9V1.07C16.94 1.56 20 4.92 20 9H13M11 9V1.07C10.3 1.16 9.63 1.33 9 1.59C6.67 2.53 4.89 4.53 4.25 7C4.09 7.64 4 8.31 4 9H11M6.34 7C6.82 5.65 7.78 4.5 9 3.81V7H6.34M6 15V13H18V15C18 16.59 17.37 18.12 16.24 19.24C15.12 20.37 13.59 21 12 21C10.41 21 8.88 20.37 7.76 19.24C6.63 18.12 6 16.59 6 15M4 15C4 17.12 4.84 19.16 6.34 20.66C7.84 22.16 9.88 23 12 23C14.12 23 16.16 22.16 17.66 20.66C19.16 19.16 20 17.12 20 15V11H4V15Z" /></svg>
 </svg>
+<svg id="mdi:pan-down">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pan-down" viewBox="0 0 24 24"><path d="M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M8,17L12,21.5L16,17H8Z" /></svg>
+</svg>
+<svg id="mdi:pan-left">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pan-left" viewBox="0 0 24 24"><path d="M7,8L2.5,12L7,16V8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" /></svg>
+</svg>
+<svg id="mdi:pan-right">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pan-right" viewBox="0 0 24 24"><path d="M17,8V16L21.5,12L17,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" /></svg>
+</svg>
+<svg id="mdi:pan-up">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pan-up" viewBox="0 0 24 24"><path d="M12,2.5L8,7H16L12,2.5M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z" /></svg>
+</svg>
 <svg id="mdi:play-pause">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
 </svg>
@@ -1000,13 +1012,13 @@ path.combo {
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
 <use href="#mdi:mouse-right-click-outline" xlink:href="#mdi:mouse-right-click-outline" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:mouse-right-click-outline"/>
 </g>
-<g transform="translate(280, 49)" class="key none keypos-3">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(280, 49)" class="key keypos-3">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<use href="#mdi:pan-up" xlink:href="#mdi:pan-up" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:pan-up"/>
 </g>
-<g transform="translate(360, 69)" class="key none keypos-4">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(360, 69)" class="key keypos-4">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<use href="#mdi:pan-left" xlink:href="#mdi:pan-left" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:pan-left"/>
 </g>
 <g transform="translate(760, 69)" class="key none keypos-5">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
@@ -1044,13 +1056,13 @@ path.combo {
 <use href="#mdi:menu-right" xlink:href="#mdi:menu-right" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:menu-right"/>
 <use href="#mdi:mouse" xlink:href="#mdi:mouse" x="-9" y="-34" height="18" width="18.0" class="key shifted glyph mdi:mouse"/>
 </g>
-<g transform="translate(280, 129)" class="key none keypos-13">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(280, 129)" class="key keypos-13">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<use href="#mdi:pan-down" xlink:href="#mdi:pan-down" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:pan-down"/>
 </g>
-<g transform="translate(360, 149)" class="key none keypos-14">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(360, 149)" class="key keypos-14">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
+<use href="#mdi:pan-right" xlink:href="#mdi:pan-right" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:pan-right"/>
 </g>
 <g transform="translate(760, 149)" class="key none keypos-15">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
