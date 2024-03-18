@@ -1500,7 +1500,7 @@ path.combo {
 </g>
 <g transform="translate(445, 314) rotate(14.0)" class="key held keypos-32">
 <rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key held"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-13" y="-13" height="26" width="26.0" class="key held tap glyph mdi:minus-circle-outline"/>
+<text x="0" y="0" class="key held tap"><tspan style="font-size: 60%">LS(LG(S))</tspan></text>
 </g>
 <g transform="translate(677, 317) rotate(-14.0)" class="key held keypos-33">
 <rect rx="4" ry="4" x="-38" y="-58" width="77" height="117" class="key held"/>
