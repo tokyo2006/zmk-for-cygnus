@@ -140,7 +140,7 @@
             label = "M5";
         };
 
-        m6: m5 {
+        m6: m6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -148,7 +148,7 @@
                 <&macro_wait_time 200>,
                 <&kp F &kp F &kp SPACE &kp RET>;
 
-            label = "M5";
+            label = "M6";
         };
     };
 
