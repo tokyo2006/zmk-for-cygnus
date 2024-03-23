@@ -31,10 +31,10 @@ layers:
   - .
   - {t: /, h: working-macro, s: '?'}
   - {t: LC(D), h: '&m1'}
-  - {t: '$$mdi:keyboard-return$$', h: shift}
+  - {t: '$$mdi:keyboard-return$$', h: mouse+media}
   - {t: '$$mdi:keyboard-space$$', h: num+fun}
   - {t: '$$mdi:backspace$$', h: shift}
-  - {t: '$$mdi:keyboard-space$$', h: funtion}
+  - {t: '$$mdi:keyboard-space$$', h: mouse+media}
   - {t: LC(D), h: '&m1'}
   num+fun:
   - {t: '2', s: '@'}
@@ -105,7 +105,7 @@ layers:
   - '|'
   - '?'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: +, type: held}
+  - +
   - '|'
   - {t: ), type: held}
   - '>'
@@ -142,10 +142,10 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - funtion
   - funtion
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   bluetooth:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -216,7 +216,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: LS(LG(S)), type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
