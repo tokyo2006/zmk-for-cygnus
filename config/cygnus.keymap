@@ -160,7 +160,7 @@
 &kp Q        &kp W           &kp E                &kp R        &kp T             &kp Y              &kp U            &kp I                &kp O        &kp P
 &mt LCTRL A  &mt LEFT_WIN S  &mt LEFT_ALT D       &lt 5 F      &mt LEFT_SHIFT G  &mt RIGHT_SHIFT H  &mt RIGHT_ALT J  &mt RIGHT_WIN K      &mt RCTRL L  &lt 1 ENTER
 &lt 6 Z      &kp X           &kp C                &kp V        &kp B             &kp N              &kp M            &kp COMMA            &kp PERIOD   &lt 6 SLASH
-                             &tap_hold_1 0 LC(D)  &lt 2 ENTER  &lt 1 SPACE       &lt 2 BACKSPACE    &lt 5 SPACE      &tap_hold_1 0 LC(D)
+                             &tap_hold_1 0 LC(D)  &lt 3 ENTER  &lt 1 SPACE       &lt 2 BACKSPACE    &lt 3 SPACE      &tap_hold_1 0 LC(D)
             >;
         };
 
