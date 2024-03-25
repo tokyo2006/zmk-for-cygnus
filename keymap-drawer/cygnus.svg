@@ -918,7 +918,7 @@ path.combo {
 </g>
 <g transform="translate(120, 209)" class="key keypos-21">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">LS(DELETE)</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">RS(DELETE)</tspan></text>
 </g>
 <g transform="translate(200, 200)" class="key keypos-22">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>

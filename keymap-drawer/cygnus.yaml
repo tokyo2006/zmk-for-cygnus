@@ -95,7 +95,7 @@ layers:
   - ':'
   - '"'
   - LS(HOME)
-  - LS(DELETE)
+  - RS(DELETE)
   - LS(END)
   - LS(PG DN)
   - '~'
