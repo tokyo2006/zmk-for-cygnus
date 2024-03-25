@@ -160,8 +160,8 @@
         default {
             bindings = <
 &kp Q        &kp W           &kp E                &kp R        &kp T             &kp Y              &kp U            &kp I                &kp O        &kp P
-&mt LCTRL A  &mt LEFT_WIN S  &mt LEFT_ALT D       &lt 0 F      &mt LEFT_SHIFT G  &mt RIGHT_SHIFT H  &mt RIGHT_ALT J  &mt RIGHT_WIN K      &mt RCTRL L  &lt 1 ENTER
-&lt 0 Z      &kp X           &kp C                &kp V        &kp B             &kp N              &kp M            &kp COMMA            &kp PERIOD   &lt 0 SLASH
+&mt LCTRL A  &mt LEFT_WIN S  &mt LEFT_ALT D       &lt 3 F      &mt LEFT_SHIFT G  &mt RIGHT_SHIFT H  &mt RIGHT_ALT J  &mt RIGHT_WIN K      &mt RCTRL L  &lt 1 ENTER
+&lt 6 Z      &kp X           &kp C                &kp V        &kp B             &kp N              &kp M            &kp COMMA            &kp PERIOD   &lt 6 SLASH
                              &tap_hold_1 0 LC(D)  &lt 4 ENTER  &ltq 1 SPACE      &ltq 2 BACKSPACE   &lt 4 SPACE      &tap_hold_1 0 LC(D)
             >;
         };
