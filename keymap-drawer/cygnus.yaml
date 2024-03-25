@@ -13,14 +13,14 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: LEFT WIN}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: default}
+  - {t: F, h: funtion}
   - {t: G, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: RIGHT WIN}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', h: num+fun}
-  - {t: Z, h: default}
+  - {t: Z, h: working-macro}
   - X
   - C
   - V
@@ -29,7 +29,7 @@ layers:
   - M
   - {t: ',', s: <}
   - .
-  - {t: /, h: default, s: '?'}
+  - {t: /, h: working-macro, s: '?'}
   - {t: LC(D), h: '&m1'}
   - {t: '$$mdi:keyboard-return$$', h: mouse+media}
   - {t: '$$mdi:keyboard-space$$', h: num+fun}
@@ -124,7 +124,7 @@ layers:
   - LC(A)
   - LC(DOWN)
   - '&m1'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F4
   - F5
@@ -242,7 +242,7 @@ layers:
   - '&m3'
   - '&m4'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - LC(D)
   - '&m1'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -251,7 +251,7 @@ layers:
   - LC(D)
   - '&m1'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
