@@ -74,9 +74,11 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <160>;
             global-quick-tap;
-            quick-tap-ms = <200>;
+            quick-tap-ms = <160>;
+            flavor = "tap-preferred";
+            retro-tap;
         };
 
         tap_hold_1: th1 {
@@ -160,7 +162,7 @@
 &kp Q        &kp W           &kp E                &kp R        &kp T             &kp Y              &kp U            &kp I                &kp O        &kp P
 &mt LCTRL A  &mt LEFT_WIN S  &mt LEFT_ALT D       &lt 5 F      &mt LEFT_SHIFT G  &mt RIGHT_SHIFT H  &mt RIGHT_ALT J  &mt RIGHT_WIN K      &mt RCTRL L  &lt 1 ENTER
 &lt 6 Z      &kp X           &kp C                &kp V        &kp B             &kp N              &kp M            &kp COMMA            &kp PERIOD   &lt 6 SLASH
-                             &tap_hold_1 0 LC(D)  &lt 3 ENTER  &lt 1 SPACE       &lt 2 BACKSPACE    &lt 3 SPACE      &tap_hold_1 0 LC(D)
+                             &tap_hold_1 0 LC(D)  &lt 3 ENTER  &ltq 1 SPACE      &ltq 2 BACKSPACE   &lt 3 SPACE      &tap_hold_1 0 LC(D)
             >;
         };
 
@@ -177,7 +179,7 @@
             bindings = <
 &kp AT_SIGN   &kp HASH        &kp DOLLAR     &kp PERCENT       &kp CARET      &kp AMPERSAND          &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
 &kp LS(LEFT)  &kp LS(DOWN)    &kp LS(RIGHT)  &kp LS(UP_ARROW)  &kp LS(PG_DN)  &kp DOLLAR             &kp PERCENT       &kp CARET             &kp COLON              &kp DOUBLE_QUOTES
-&kp LS(HOME)  &kp LS(DELETE)  &kp LS(END)    &kp LS(PG_DN)     &kp TILDE      &kp EXCLAMATION        &kp AT_SIGN       &kp POUND             &kp PIPE               &kp QUESTION
+&kp LS(HOME)  &kp LS(DELETE)  &kp LS(END)    &kp LS(PG_DN)     &kp TILDE      &kp EXCLAMATION        &kp AT_SIGN       &kp POUND             &kp LEFT_BRACE         &kp RIGHT_BRACE
                               &none          &kp PLUS          &kp PIPE       &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &none
             >;
         };
