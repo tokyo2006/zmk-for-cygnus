@@ -13,14 +13,14 @@ layers:
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: LEFT WIN}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: funtion}
+  - {t: F, h: default}
   - {t: G, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: RIGHT WIN}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-return$$', h: num+fun}
-  - {t: Z, h: working-macro}
+  - {t: Z, h: default}
   - X
   - C
   - V
@@ -29,12 +29,12 @@ layers:
   - M
   - {t: ',', s: <}
   - .
-  - {t: /, h: working-macro, s: '?'}
+  - {t: /, h: default, s: '?'}
   - {t: LC(D), h: '&m1'}
-  - {t: '$$mdi:keyboard-return$$', h: mouse+media}
+  - {t: '$$mdi:keyboard-return$$', h: funtion}
   - {t: '$$mdi:keyboard-space$$', h: num+fun}
   - {t: '$$mdi:backspace$$', h: shift}
-  - {t: '$$mdi:keyboard-space$$', h: mouse+media}
+  - {t: '$$mdi:keyboard-space$$', h: funtion}
   - {t: LC(D), h: '&m1'}
   num+fun:
   - {t: '2', s: '@'}
@@ -110,6 +110,43 @@ layers:
   - {t: ), type: held}
   - '>'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  funtion:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LC(UP ARROW)
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F5
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - LC(A)
+  - LC(DOWN)
+  - '&m1'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F4
+  - F5
+  - F6
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F12
+  - LC(Z)
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F1
+  - F2
+  - F3
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - LS(LG(S))
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   mouse+media:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -142,10 +179,10 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - funtion
-  - funtion
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - bluetooth
+  - bluetooth
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   bluetooth:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -180,46 +217,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  funtion:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LC(UP ARROW)
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F5
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - LC(A)
-  - LC(DOWN)
-  - '&m1'
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F4
-  - F5
-  - F6
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F12
-  - LC(Z)
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F1
-  - F2
-  - F3
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: LS(LG(S)), type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   working-macro:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -242,16 +242,16 @@ layers:
   - '&m3'
   - '&m4'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - LC(D)
-  - '&m1'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LC(D)
   - '&m1'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LC(D)
+  - '&m1'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
