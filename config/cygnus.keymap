@@ -104,7 +104,7 @@
             bindings =
                 <&kp LC(S)>,
                 <&macro_wait_time 300>,
-                <&kp A &kp N5 &kp ENTER>;
+                <&none &kp A &kp N5 &kp ENTER>;
 
             label = "m1";
         };
