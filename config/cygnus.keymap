@@ -78,7 +78,6 @@
             global-quick-tap;
             quick-tap-ms = <160>;
             flavor = "tap-preferred";
-            retro-tap;
         };
 
         tap_hold_1: th1 {
