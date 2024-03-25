@@ -102,8 +102,8 @@ layers:
   - '!'
   - '@'
   - '#'
-  - '|'
-  - '?'
+  - '{'
+  - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - +
   - '|'

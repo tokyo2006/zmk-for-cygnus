@@ -948,11 +948,11 @@ path.combo {
 </g>
 <g transform="translate(1000, 209)" class="key keypos-28">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">|</text>
+<text x="0" y="0" class="key tap">{</text>
 </g>
 <g transform="translate(1080, 229)" class="key keypos-29">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<text x="0" y="0" class="key tap">?</text>
+<text x="0" y="0" class="key tap">}</text>
 </g>
 <g transform="translate(279, 324) rotate(14.0)" class="key none keypos-30">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key none"/>
