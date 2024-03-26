@@ -103,9 +103,8 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(S)>,
-                <&macro_wait_time 300>,
-                <&none &kp A &kp N5 &kp ENTER>,
-                <&macro_press>;
+                <&macro_wait_time 400>,
+                <&kp A &kp N5 &kp ENTER>;
 
             label = "m1";
         };
