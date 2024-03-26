@@ -102,9 +102,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LC(S)>,
                 <&macro_wait_time 400>,
-                <&kp A &kp N5 &kp ENTER>;
+                <&kp LC(S) &kp A &kp N5 &kp ENTER>;
 
             label = "m1";
         };
