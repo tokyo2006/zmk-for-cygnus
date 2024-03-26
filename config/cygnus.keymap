@@ -23,18 +23,6 @@
     combos {
         compatible = "zmk,combos";
 
-        left_bkt {
-            bindings = <&kp LBKT>;
-            key-positions = <3 2>;
-            timeout-ms = <50>;
-        };
-
-        right_bkt {
-            bindings = <&kp RBKT>;
-            key-positions = <6 7>;
-            timeout-ms = <50>;
-        };
-
         esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
@@ -43,16 +31,6 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
-        };
-
-        lshift {
-            bindings = <&kp LSHIFT>;
-            key-positions = <13 12>;
-        };
-
-        rshift {
-            bindings = <&kp RSHIFT>;
-            key-positions = <16 17>;
         };
     };
 
