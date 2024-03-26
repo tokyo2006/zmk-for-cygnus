@@ -259,15 +259,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
-- p: [3, 2]
-  k: '['
-- p: [6, 7]
-  k: ']'
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
 - p: [10, 11]
   k: $$mdi:keyboard-tab$$
-- p: [13, 12]
-  k: $$mdi:apple-keyboard-shift$$
-- p: [16, 17]
-  k: $$mdi:apple-keyboard-shift$$
