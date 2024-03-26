@@ -51,7 +51,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:arrow-up-bold$$
-  - PG DN
+  - PG UP
   - '4'
   - {t: '5', s: '%'}
   - '6'
@@ -88,7 +88,7 @@ layers:
   - LS(DOWN)
   - LS(RIGHT)
   - LS(UP ARROW)
-  - LS(PG DN)
+  - LS(PG UP)
   - $
   - '%'
   - ^
