@@ -83,7 +83,7 @@ zephyr_udc0: &usbd {
         layers = <SCROLLER>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_xy_scaler 1 50>,
+            <&zip_xy_scaler 1 500>,
             <&zip_xy_to_scroll_mapper>;
     };
 
