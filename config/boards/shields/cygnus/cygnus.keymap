@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors/runtime_macro.dtsi>
 
 &mt {
     tapping-term-ms = <200>;
@@ -82,7 +83,7 @@ keymap {
 			&kp N1		&kp N2 		&kp N3		&kp N4		&kp N5				&kp N6 		&kp N7		&kp N8		&kp N9		&kp N0
 			&trans		&trans		&trans		&trans		&kp PSCRN 			&kp LEFT	&kp DOWN	&kp UP		&kp RIGHT	&kp SQT
 			&trans		&kp C_PREV	&kp C_NEXT	&kp LEFT	&kp RIGHT			&kp MINUS	&kp PLUS	&kp LBKT	&kp RBKT	&hs RSHIFT BSLH
-									&trans		&trans		&kp LGUI			&trans		&trans		&trans
+									&trans		&trans		&kp LGUI			&trans		&trans		&studio_unlock
 		>;
 	};
 
@@ -91,7 +92,7 @@ keymap {
 			&kp F1		&kp F2 		&kp F3		&kp F4		&kp F5				&kp F6 		&kp F7		&kp F8		&kp F9		&kp F10
 			&kp F11		&kp F12		&trans		&kp GRAVE	&kp AMPS			&kp EQUAL	&kp LS(N9) 	&kp LS(N0)	&kp RA(LBKT) &kp RA(RBKT)
 			&trans		&trans	 	&trans		&trans		&trans				&kp MINUS   &kp RA(SQT) &kp RA(BSLH) &kp BSLH	&kp LS(BSLH)
-									&trans		&trans		&trans				&trans		&trans		&trans
+									&rmacro 0	&trans		&trans				&trans		&trans		&trans
 		>;
 	};
 

@@ -13,16 +13,17 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: cygnus_central_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    artifact-name: cygnus_central_dongle  
-  - board: nice_nano_v2
+    artifact-name: cygnus_central_dongle
+  - board: nice_nano//zmk
     shield: cygnus_peripheral_left
     artifact-name: cygnus_peripheral_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: cygnus_peripheral_right
     artifact-name: cygnus_peripheral_right
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
+    artifact-name: settings_reset

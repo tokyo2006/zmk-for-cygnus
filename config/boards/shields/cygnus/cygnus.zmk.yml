@@ -5,9 +5,13 @@ type: shield
 url:
 requires:
   - pro_micro
-exposes:
 features:
   - keys
+  - pointing_device
+outputs:
+  - usb
+  - ble
 siblings:
-  - cygnus_left
-  - cygnus_right
+  - cygnus_central_dongle
+  - cygnus_peripheral_left
+  - cygnus_peripheral_right

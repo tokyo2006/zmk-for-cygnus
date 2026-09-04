@@ -1,16 +1,66 @@
 manifest:
+  version: 1.2
+  defaults:
+    remote: cormoran
+    revision: main
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: badjeff
-      url-base: https://github.com/badjeff
+    - name: cormoran
+      url-base: https://github.com/cormoran
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: cormoran
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
+      revision: main+dya
+      clone-depth: 1
+    - name: zephyr
+      remote: cormoran
+      revision: v4.1.0+zmk-fixes+nrf-half-duplex-uart
+      clone-depth: 1
+      import:
+        name-blocklist:
+          - ci-tools
+          - hal_altera
+          - hal_cypress
+          - hal_infineon
+          - hal_microchip
+          - hal_nxp
+          - hal_openisa
+          - hal_xtensa
+          - hal_st
+          - hal_ti
+          - loramac-node
+          - mcuboot
+          - mcumgr
+          - net-tools
+          - openthread
+          - edtt
+          - trusted-firmware-m
+          - chre
+
+    # Level 2 core (required by several feature modules below)
+    - name: zmk-feature-custom-settings
+    - name: zmk-feature-fast-keymap
+
+    # Macro / Combo tabs
+    - name: zmk-feature-runtime-macro
+      import: true
+    - name: zmk-feature-runtime-combo
+      import: true
+
+    # Connection - BLE management tab
+    - name: zmk-module-ble-management
+
+    # Settings tab (sleep + custom settings RPC relay)
+    - name: zmk-module-settings-rpc
+
+    # Diagnostics tabs
+    - name: zmk-feature-device-info
+    - name: zmk-feature-watchdog
+    - name: zmk-feature-kscan-diagnostics
+    - name: zmk-module-devtool
+
+    # Trackball (PMW3610, cormoran driver + runtime input processor)
+    - name: zmk-driver-pmw3610-with-custom-studio-rpc
+    - name: zmk-module-runtime-input-processor
   self:
     path: config
