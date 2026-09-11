@@ -227,7 +227,7 @@ layers:
   - {type: held}
   Flash:
   - $$mdi:download-circle$$
-  - {t: ▽, type: trans}
+  - '&rmacro'
   - {t: ▽, type: trans}
   - $$mdi:arrow-up$$
   - {t: ▽, type: trans}
@@ -238,7 +238,7 @@ layers:
   - {t: '$$mdi:bluetooth-connect$$', h: '4'}
   - {t: '$$mdi:bluetooth-connect$$', h: '5'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '$$mdi:bluetooth-connect$$', h: '$$mdi:arrow-right$$'}
@@ -270,26 +270,3 @@ layers:
   - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
-combos:
-- p: [3, 4]
-  k: {t: '[', s: '{'}
-- p: [7, 8]
-  k: {t: ']', s: '}'}
-- p: [17, 18]
-  k: (
-- p: [21, 22]
-  k: )
-- p: [29, 30]
-  k: '{'
-- p: [33, 34]
-  k: '}'
-- p: [5, 6]
-  k: {t: \, s: '|'}
-- p: [19, 20]
-  k: '|'
-- p: [0, 1]
-  k: Esc
-- p: [19, 18]
-  k: +
-- p: [21, 20]
-  k: '='
