@@ -21,18 +21,22 @@
  };
 
 
-/ { 
-    combos {
-        compatible = "zmk,combos";
-		combo_esc { 
+/ {
+    runtime_combo_defaults {
+        compatible = "cormoran,runtime-combo-defaults";
+		combo_esc {
+            slot = <0>;
             timeout-ms = <50>;
             key-positions = <1 2>;
             bindings = <&kp ESC>;
+            display-name = "Esc";
         };
-		combo_tab { 
+		combo_tab {
+            slot = <1>;
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp TAB>;
+            display-name = "Tab";
         };
     };
 
