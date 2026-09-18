@@ -61,6 +61,8 @@ manifest:
 
     # Trackball (PMW3610, cormoran driver + runtime input processor)
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
+      import: true
     - name: zmk-module-runtime-input-processor
+      import: true
   self:
     path: config
