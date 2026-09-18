@@ -39,7 +39,9 @@ manifest:
 
     # Level 2 core (required by several feature modules below)
     - name: zmk-feature-custom-settings
+      import: true
     - name: zmk-feature-fast-keymap
+      import: true
 
     # Macro / Combo tabs
     - name: zmk-feature-runtime-macro
@@ -49,15 +51,21 @@ manifest:
 
     # Connection - BLE management tab
     - name: zmk-module-ble-management
+      import: true
 
     # Settings tab (sleep + custom settings RPC relay)
     - name: zmk-module-settings-rpc
+      import: true
 
     # Diagnostics tabs
     - name: zmk-feature-device-info
+      import: true
     - name: zmk-feature-watchdog
+      import: true
     - name: zmk-feature-kscan-diagnostics
+      import: true
     - name: zmk-module-devtool
+      import: true
 
     # Trackball (PMW3610, cormoran driver + runtime input processor)
     - name: zmk-driver-pmw3610-with-custom-studio-rpc
